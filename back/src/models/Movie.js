@@ -2,16 +2,13 @@ const mongoose = require("mongoose");
 
 const moviesSchema = new mongoose.Schema({
     title: String,
-    year: Number,
+    year: String,
     director: String,
     duration: String,
-    genere: Array,
-    rate: Number,
+    genre: String,
+    rate: String,
     poster: String,
     description: String,
-    
-
-
 });
 
 const Movies = mongoose.model("Movies", moviesSchema);
